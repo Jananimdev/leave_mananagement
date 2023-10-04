@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('coll3.jpg'); /* Replace 'your-background-image.jpg' with your image file path */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+        }
+
+        h1 {
+            color: #0e0d0d; /* Header text color */
+            margin-bottom: 20px; /* Space below the header */
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8); /* Form background color with transparency */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow for the form */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc; /* Input border color */
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333; /* Submit button background color */
+            color: #fff; /* Submit button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555; /* Hover color for the submit button */
+        }
+    </style>
+</head>
+<body>
+    <h1>Log In</h1>
+    <form action="login.php" method="post">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <input type="submit" value="Log In">
+    </form>
+</body>
+</html>
